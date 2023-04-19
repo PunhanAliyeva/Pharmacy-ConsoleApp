@@ -46,5 +46,21 @@ namespace CategoryConsoleApp
         {
 
         }
+        public void SellMedicine(Medicine medicine)
+        {
+            Console.WriteLine("Enter the medicine's name which you want");
+            string input= Console.ReadLine();
+            Medicine medicines=new Medicine(input);
+            if( Count == medicines.Count)
+            {
+                Count--;
+            }
+            Console.WriteLine(medicines.Count);
+        }
+
+        internal void SellMedicine()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
